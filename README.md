@@ -17,5 +17,11 @@ Tener instalado [NodeJS](https://nodejs.org/es/) versión 6 o superior
 
 #### Changelog
 
+###### XX/05/2018
+1. Mover app.js desde la raiz hacia assets/js/
+2. Corregir falla en comando "npm run build:prod" dentro de Package.json
+3. Cambiar a auntoinject: false en Webpack Config
+4. Agregar image-webpack-loader
+
 ###### 25/05/2018
 1. First Commit
