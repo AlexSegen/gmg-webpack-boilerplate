@@ -18,4 +18,4 @@ Tener instalado [NodeJS](https://nodejs.org/es/) versión 6 o superior
 #### Changelog
 
 ###### 25/05/2018
-1. Primer Commit
+1. First Commit
