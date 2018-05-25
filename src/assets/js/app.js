@@ -1,7 +1,7 @@
 //CSS
-import './assets/scss/app.scss'; 
+import '../scss/app.scss'; 
 
 //JS
 import $ from 'jquery'
 import bootstrap from 'bootstrap'
-import './assets/js/main.js'
+import './main.js'

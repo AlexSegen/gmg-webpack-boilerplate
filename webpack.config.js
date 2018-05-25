@@ -6,21 +6,21 @@ const path = require('path'),
   const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
   const extractPlugin = new ExtractTextPlugin({
-    filename: './assets/css/app.css'
+    filename: 'assets/css/app.css'
   })
 
   const config = {
   context: path.resolve(__dirname, 'src'),
   devServer: {
     compress: true,
-    contentBase: path.resolve(__dirname, 'dist/assets/media'),
+    contentBase: path.resolve(__dirname, 'dist/assets/img'),
     open: false,
     port: 3000,
     stats: 'normal',
   },
   devtool: 'inline-source-map',
   entry: {
-    app: './app.js',
+    app: './assets/js/app.js',
   },
   module: {
     rules: [
@@ -61,6 +61,7 @@ const path = require('path'),
       }, */
       {
         test: /\.(scss|css)$/,
+        include: [path.resolve(__dirname, 'src', 'assets', 'scss')],
         use: extractPlugin.extract({
           fallback: 'style-loader',
           use: ['css-loader','sass-loader'],
@@ -72,22 +73,13 @@ const path = require('path'),
         use: ['html-loader'],
       },
       {
-        test: /\.(jpg|png|gif|svg)$/,
+        test:/\.(jpg|png|jpeg|gif|svg)$/,
         use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: './assets/media/',
-              publicPath: './assets/media/'
-            }
-          }
-        ]
+          //'file-loader?name=[name].[ext]&outputPath=assets/img/&publicPath=assets/img/',
+          'file-loader?name=assets/img/[hash:14].[ext]',
+          'image-webpack-loader'
+          ]
       },
-     /*  {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: ['file-loader']
-      }, */
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: ['file-loader?name=assets/fonts/[name].[ext]']
