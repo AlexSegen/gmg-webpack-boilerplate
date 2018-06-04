@@ -16,6 +16,12 @@ Tener instalado [NodeJS](https://nodejs.org/es/) versión 6 o superior
 
 #### Changelog
 
+<<<<<<< HEAD
+=======
+###### 04/06/2018
+1. Fix style-loader, file-loader configuration
+2. Remove Yarn file
+>>>>>>> alpha-0.0.3
 ###### 28/05/2018
 1. Mover app.js a assets/js/
 2. Corregir falla en comando "npm run build:prod" dentro de Package.json

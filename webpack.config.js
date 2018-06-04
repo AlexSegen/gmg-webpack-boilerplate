@@ -41,7 +41,7 @@ const path = require('path'),
         use: extractPlugin.extract({
           fallback: 'style-loader',
           use: ['css-loader','sass-loader'],
-          publicPath: '/'
+          publicPath: '../../'
         })
       },
       {
@@ -49,12 +49,16 @@ const path = require('path'),
         use: ['html-loader'],
       },
       {
-        test:/\.(jpg|png|jpeg|gif|svg)$/,
-        use: [
-          //'file-loader?name=[name].[ext]&outputPath=assets/img/&publicPath=assets/img/',
-          'file-loader?name=assets/img/[hash:14].[ext]',
-          'image-webpack-loader'
-          ]
+				test:/\.(jpg|png|jpeg|gif|svg|map)$/,
+				use: [
+						{
+							loader: 'file-loader',
+							options: {
+								name: '[hash:14].[ext]',
+								outputPath: 'assets/img/'
+							}
+						}
+					]
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
