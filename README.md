@@ -16,7 +16,10 @@ Tener instalado [NodeJS](https://nodejs.org/es/) versión 6 o superior
 
 #### Changelog
 
-###### XX/05/2018
+###### 04/06/2018
+1. Fix style-loader, file-loader configuration
+2. Remover Yarn file
+###### 28/05/2018
 1. Mover app.js a assets/js/
 2. Corregir falla en comando "npm run build:prod" dentro de Package.json
 3. Cambiar a auntoinject: false en Webpack Config
