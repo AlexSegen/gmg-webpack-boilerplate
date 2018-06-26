@@ -16,6 +16,11 @@ Tener instalado [NodeJS](https://nodejs.org/es/) versión 6 o superior
 
 #### Changelog
 
+###### XX/06/2018
+1. Added Web Elements in /page.html
+2. Updated colors variables in _settings.scss
+3. Update colors variables in _buttons.scss
+
 ###### 04/06/2018
 1. Fix style-loader, file-loader configuration
 2. Remove Yarn file
