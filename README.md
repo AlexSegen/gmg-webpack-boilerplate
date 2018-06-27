@@ -12,14 +12,16 @@ Ambiente de desarrollo para diseño de sitios estáticos. Este boilerplate utili
 
 ## Requerimientos
 
-Tener instalado [NodeJS](https://nodejs.org/es/) versión 6 o superior
+Tener instalado [NodeJS](https://nodejs.org/es/) versión 8 o superior
 
 #### Changelog
 
-###### XX/06/2018
+###### 27/06/2018
 1. Added Web Elements in /page.html
-2. Updated colors variables in _settings.scss
-3. Update colors variables in _buttons.scss
+2. Added bootstrap-sass (Now bootstrap elements extends theme colors in _settings.scss)
+3. Updated colors variables in _settings.scss
+4. Updated colors variables in _buttons.scss
+5. Updated package.json declared dependencies
 
 ###### 04/06/2018
 1. Fix style-loader, file-loader configuration

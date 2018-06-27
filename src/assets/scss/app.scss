@@ -12,9 +12,9 @@
         Website:                http://www.geeksmotion.com
 
 -----------------------------------------------------------------------*/
-@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import '../../../node_modules/font-awesome/css/font-awesome.css';
 @import 'global/settings',
+        'addons/bootstrap-sass/assets/stylesheets/bootstrap',
         'modules/buttons',
         'modules/text-theme',
         'modules/bg-theme',
