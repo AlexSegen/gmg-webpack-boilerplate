@@ -49,6 +49,11 @@ const path = require('path'),
         use: ['html-loader'],
       },
       {
+        test: /\.json$/,
+        type: 'javascript/auto',
+        use: ['url-loader'],
+      },
+      {
 				test:/\.(jpg|png|jpeg|gif|svg|map)$/,
 				use: [
 						{
@@ -86,6 +91,18 @@ const path = require('path'),
     new HtmlWebpackPlugin({
       filename: 'page.html',
       template: 'page.html',
+      inject: false,
+      chuncks:[]
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'views/template.html',
+      template: 'views/template.html',
+      inject: false,
+      chuncks:[]
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'views/table.html',
+      template: 'views/table.html',
       inject: false,
       chuncks:[]
     })
