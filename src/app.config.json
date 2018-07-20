@@ -1,60 +1,58 @@
 {
-    "data":[
+    "server": {
+        "version": 1.0
+    },
+    "libs": [
         {
             "id": 1,
-            "title": "_.filter",
-            "description": "Función que nos permite obtener 'List&#60;objeto&#62;' de datos dependiendo de uno o más filtros.",
-            "searchon": "first_name",
-            "pre": "\nvar jsontmp = _.filter(json, \nfunction(filter){ \nreturn filter.id == 1;\n});",
-            "helptext":"kat"
+            "title": "Underscore.js",
+            "description": "--",
+            "url": "https://underscorejs.org/",
+            "img": "assets/img/underscore.png"
         },
         {
             "id": 2,
-            "title": "_.find",
-            "description": "Función que nos permite obtener un objeto dependiendo de uno o más filtros.",
-            "searchon": "last_name",
-            "pre": "\nvar jsontmp = _.find(json, \nfunction(find){ \nreturn find.id == 1;\n});",
-            "helptext":"rushford"
+            "title": "Numeral.js",
+            "description": "--",
+            "url": "http://numeraljs.com/",
+            "img": "assets/img/numeral.png"
         },
         {
             "id": 3,
-            "title": "_.sortBy",
-            "description": "Función que nos permite ordenar de manera 'ASC' un listado, en caso de querer 'invertir' el resultado, se debe agregar 'reverse()' al resultado final.",
-            "searchon": "id",
-            "pre": "\nvar jsontmp = _.sortBy(json, \nfunction(sort){ \nreturn sort.id;\n}); \n\n jsontmp.reverse();",
-            "helptext":"id,reverse"
+            "title": "Moment.js",
+            "description": "--",
+            "url": "https://momentjs.com/",
+            "img": "assets/img/moment.png"
         },
         {
             "id": 4,
-            "title": "_.uniq",
-            "description": "Función que nos permite mostrar solo objetos distintos, dependiendo de un campo.",
-            "searchon": "id",
-            "pre": "\nvar jsontmp = _.uniq(json, \nfunction(group){ \nreturn group.id;\n});",
-            "helptext":"gender"
-        },
-        {
-            "id": 5,
-            "title": "_.contains",
-            "description": "Función que nos permite mostrar un listado dependiendo de otro array, este nos devuelve un true o false.",
-            "searchon": "id",
-            "pre": "\n var array = [1,2,3,4]; \nvar jsontmp = _.filter(json, \nfunction(filter){ \nreturn _.contains(array, filter.id);\n});",
-            "helptext":"1,2,900"
-        
-        },
-        {
-            "id": 6,
-            "title": "_.first && _.last",
-            "description": "Función que nos permite obtener el primer o último resultado de un JSON, adicionalmente, es factible obtener un campo en particular si se desea (3er ejemplo).",
-            "searchon": "id",
-            "pre": "\n//_.first\nvar jsontmp = _.first(_.filter(json, \nfunction(filter){ \nreturn _.contains(array, filter.id);\n}));\n//_.last\nvar jsontmp = _.last(_.filter(json, \nfunction(filter){ \nreturn _.contains(array, filter.id);\n}));\n//3er ejemplo\nvar jsontmp = _.last(_.filter(json, \nfunction(filter){ \nreturn _.contains(array, filter.id);\n})).first_name;",
-            "helptext":"first"
+            "title": "Jquery.js",
+            "description": "--",
+            "url": "https://jquery.com/download/",
+            "img": "assets/img/moment.png"
         }
     ],
-    "default":{
-        "div": ".dvresults_",
-        "maxrecord": 5
-    },
-    "mensajeria":{
-        "noresult": "sin resultados."
-    }
+    "css": [
+        {
+            "id": 1,
+            "title": "Bootstrap 3.3",
+            "description": "--",
+            "url": "https://getbootstrap.com/docs/3.3/",
+            "img": "./assets/img/underscore.png"
+        },
+        {
+            "id": 2,
+            "title": "fontawesome 4.7",
+            "description": "--",
+            "url": "https://fontawesome.com/v4.7.0/",
+            "img": "./assets/img/numeral.png"
+        },
+        {
+            "id": 3,
+            "title": "Propeller.in",
+            "description": "--",
+            "url": "https://propeller.in/",
+            "img": "./assets/img/moment.png"
+        }
+    ]
 }

@@ -59,7 +59,8 @@ const path = require('path'),
 						{
 							loader: 'file-loader',
 							options: {
-								name: '[hash:14].[ext]',
+                //name: '[hash:14].[ext]',
+                name: '[name].[ext]',
 								outputPath: 'assets/img/'
 							}
 						}
@@ -83,7 +84,7 @@ const path = require('path'),
     }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'GeeksMotion Template',
+      title: 'Framework-CA',
       filename: 'index.html',
       template: 'index.html',
       inject: false
@@ -101,8 +102,8 @@ const path = require('path'),
       chuncks:[]
     }),
     new HtmlWebpackPlugin({
-      filename: 'views/table.html',
-      template: 'views/table.html',
+      filename: 'views/tabs.html',
+      template: 'views/tabs.html',
       inject: false,
       chuncks:[]
     })

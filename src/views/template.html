@@ -1,28 +1,19 @@
-<div class="col-lg-6">
+<div class="col-lg-3">
     <div class="pmd-card pmd-card-default pmd-z-depth">
-        <!-- Card header -->
-        <div class="pmd-card-title">
-            <div class="media-left">
-                <i class="material-icons">code</i>
-            </div>
-            <div class="media-body media-middle">
-                <h3 class="pmd-card-title-text">{{title}}</h3>
-                <span class="pmd-card-subtitle-text">{{description}}</span>
-            </div>
-        </div>
-        
-        <!-- Card body -->
-        
-        <div class="pmd-card-body">
-            <pre>
-                {{pre}}
-            </pre>
+        <!-- Card media -->
+        <div class="pmd-card-media hide">
+            <img width="1184" height="666" class="img-responsive" src="{{img}}">
         </div>
 
-        <div class="pmd-card-body">
-            <input type="text" class="txtchange form-control" data-id="{{id}}" data-field="{{searchon}}" data-type="{{id}}" placeholder="{{helptext}}">
-            <div class="clearfix">&nbsp;</div>
-            <div class="row dvresults_{{id}}"></div>
+        <!-- Card header -->
+        <div class="pmd-card-title">
+            <h2 class="pmd-card-title-text">{{title}}</h2>
+            <span class="pmd-card-subtitle-text">{{description}}</span>
+        </div>
+
+        <!-- Card action -->
+        <div class="pmd-card-actions">
+            <a href="{{url}}" target="_blank">{{url}}</a>
         </div>
     </div>
 </div>
