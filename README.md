@@ -16,6 +16,14 @@ Tener instalado [NodeJS](https://nodejs.org/es/) versión 8 o superior
 
 #### Changelog
 
+###### 24/07/2018
+1. Added buttons variants to /page.html
+2. Added button "border" variant for dark and light backgrounds
+3. Added bg-dark and bg-light classes to _bg-theme.scss
+4. Added text-dark and text-light classes to _text-theme.scss
+5. Added more Margin and Padding helpers to _spacing.scss
+6. Updated button "border" variants. (Add new class ".border-dark" for light backgrounds)
+
 ###### 27/06/2018
 1. Added Web Elements in /page.html
 2. Added bootstrap-sass (Now bootstrap elements extends theme colors in _settings.scss)

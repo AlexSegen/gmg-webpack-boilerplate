@@ -21,12 +21,20 @@
   color: $theme05;
 }
 
-.text-black {
-  color: #111111;
+.text-dark {
+  color: $dark-theme;
 }
 
 .text-gray {
-  color: #333333;
+  color: $gray-theme;
+}
+
+.text-light {
+	color: $light-theme;
+}
+
+.text-black {
+  color: #111111;
 }
 
 .text-white {

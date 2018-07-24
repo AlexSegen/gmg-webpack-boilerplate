@@ -70,8 +70,25 @@ $btn-default-radius:3px;
     }
 
     &.border {
-      color: #666 !important;
+      color: #eee !important;
       background: transparent;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $theme;
+        border: 1px solid $theme;
+      }
+    }
+    
+    &.border-dark {
+      color: #737373 !important;
+      background: transparent;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $theme;
+        border: 1px solid $theme;
+      }
     }
 
     &:hover,
@@ -104,7 +121,25 @@ $btn-default-radius:3px;
     }
 
     &.border {
+      color: #eee !important;
       background: transparent;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $theme02;
+        border: 1px solid $theme02;
+      }
+    }
+    
+    &.border-dark {
+      color: #737373 !important;
+      background: transparent;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $theme02;
+        border: 1px solid $theme02;
+      }
     }
 
     &:hover,
@@ -138,7 +173,25 @@ $btn-default-radius:3px;
     }
 
     &.border {
+      color: #eee !important;
       background: transparent;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $theme03;
+        border: 1px solid $theme03;
+      }
+    }
+    
+    &.border-dark {
+      color: #737373 !important;
+      background: transparent;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $theme03;
+        border: 1px solid $theme03;
+      }
     }
 
     &:hover,
@@ -171,9 +224,27 @@ $btn-default-radius:3px;
     }
 
     &.border {
+      color: #eee !important;
       background: transparent;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $theme04;
+        border: 1px solid $theme04;
+      }
     }
-
+    
+    &.border-dark {
+      color: #737373 !important;
+      background: transparent;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $theme04;
+        border: 1px solid $theme04;
+      }
+    }
+    
     &:hover,
     &:focus,
     &:active {
@@ -204,7 +275,25 @@ $btn-default-radius:3px;
     }
 
     &.border {
+      color: #eee !important;
       background: transparent;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $theme05;
+        border: 1px solid $theme05;
+      }
+    }
+    
+    &.border-dark {
+      color: #737373 !important;
+      background: transparent;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $theme05;
+        border: 1px solid $theme05;
+      }
     }
 
     &:hover,
@@ -237,7 +326,26 @@ $btn-default-radius:3px;
     }
 
     &.border {
+      color: #eee !important;
       background: transparent;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $light-theme;
+        border: 1px solid $light-theme;
+      }
+    }
+    
+    &.border-dark {
+      color: #666 !important;
+      background: transparent;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $light-theme;
+        border: 1px solid $light-theme;
+        color: #666 !important;
+      }
     }
 
     &:hover,
@@ -269,7 +377,28 @@ $btn-default-radius:3px;
     }
 
     &.border {
+      color: #eee !important;
       background: transparent;
+      border-color: #999999;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $dark-theme;
+        border: 1px solid $dark-theme;
+        color: #eee !important;
+      }
+    }
+    
+    &.border-dark {
+      color: #737373 !important;
+      background: transparent;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $dark-theme;
+        border: 1px solid $dark-theme;
+        color: #eee !important;
+      }
     }
 
     &:hover,
@@ -301,7 +430,26 @@ $btn-default-radius:3px;
     }
 
     &.border {
+      color: #eee !important;
       background: transparent;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $gray-theme;
+        border: 1px solid $gray-theme;
+      }
+    }
+    
+    &.border-dark {
+      color: #737373 !important;
+      background: transparent;
+      &:hover,
+      &:focus,
+      &:active {
+        background: $gray-theme;
+        border: 1px solid $gray-theme;
+        color: #eee !important;
+      }
     }
 
     &:hover,

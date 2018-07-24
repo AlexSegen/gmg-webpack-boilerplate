@@ -21,14 +21,22 @@
   background: $theme05;
 }
 
-.bg-black {
-  background: #111;
+.bg-dark {
+  background: $dark-theme;
 }
 
 .bg-gray {
-  background: #333;
+  background: $gray-theme;
 }
 
-.btn-white {
-	background: #fff;
+.btn-light {
+	background: $light-theme;
+}
+
+.bg-black {
+  background: #111111;
+}
+
+.bg-white {
+  background: #ffffff;
 }
